@@ -11,6 +11,6 @@ const MyButton = ({user, userList, subscribe}) => {
     } else {
         buttonValue = "取消预约"
     }
-    return <button className="btn" onClick={() => subscribe(user)}>{buttonValue}</button>
+    return <button className="btn" onClick={() => subscribe()}>{buttonValue}</button>
 }
 export default MyButton
