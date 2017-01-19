@@ -17,7 +17,7 @@ export function getCookies(cname) {
 }
 //存cookie
 export function setCookies(cname, value, expiredays) {
-    var exdate = new Date()
+    const exdate = new Date()
     exdate.setDate(exdate.getDate() + expiredays)
     document.cookie = cname + "=" + escape(value) +
         ((expiredays == null) ? "" : "; expires=" + exdate.toGMTString()) + ";path=/"
